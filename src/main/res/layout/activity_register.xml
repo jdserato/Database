@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.danielle98.hogwarts.Register">
+
+    <TextView
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Wizard Registry"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="29dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_width="306dp"
+        android:layout_height="44dp"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:id="@+id/etName"
+        android:hint="Wizard Name"
+        android:textColorHint="@color/white"
+        tools:layout_editor_absoluteY="190dp"
+        tools:layout_editor_absoluteX="39dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/etPass"
+        android:layout_alignEnd="@+id/etPass" />
+
+    <EditText
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_width="306dp"
+        android:layout_height="44dp"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:id="@+id/etHouse"
+        android:hint="Wizard House"
+        android:textColorHint="@color/white"
+        tools:layout_editor_absoluteY="190dp"
+        tools:layout_editor_absoluteX="39dp"
+        android:layout_below="@+id/etPass"
+        android:layout_alignEnd="@+id/etPass"
+        android:layout_marginTop="10dp" />
+
+
+
+    <EditText
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/etPass"
+        android:layout_width="305dp"
+        android:layout_height="44dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        tools:layout_editor_absoluteY="250dp"
+        tools:layout_editor_absoluteX="40dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/btnReg"
+        android:layout_width="201dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:onClick="register"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteY="312dp"
+        tools:layout_editor_absoluteX="92dp"
+        android:layout_above="@+id/tvLogin"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="back to login"
+        android:id="@+id/tvLogin"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteY="374dp"
+        tools:layout_editor_absoluteX="143dp"
+        android:layout_marginBottom="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
