@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Login"
+    >
+
+    <EditText
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_width="306dp"
+        android:layout_height="44dp"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:id="@+id/etName"
+        android:hint="Wizard Name"
+        android:textColorHint="@color/white"
+        tools:layout_editor_absoluteY="190dp"
+        tools:layout_editor_absoluteX="39dp"
+        android:layout_above="@+id/etPass"
+        android:layout_alignStart="@+id/etPass"
+        android:layout_marginBottom="10dp" />
+
+
+    <EditText
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_width="305dp"
+        android:layout_height="44dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/etPass"
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        tools:layout_editor_absoluteY="250dp"
+        tools:layout_editor_absoluteX="40dp"
+        android:layout_above="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/btnLogin"
+        android:layout_width="204dp"
+        android:layout_height="44dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:text="Login"
+        android:onClick="Login"
+        tools:layout_editor_absoluteY="332dp"
+        tools:layout_editor_absoluteX="103dp"
+        android:layout_above="@+id/btnReg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+
+    <Button
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/btnReg"
+        android:layout_width="201dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:text="Register"
+        android:onClick="register"
+        tools:layout_editor_absoluteY="388dp"
+        tools:layout_editor_absoluteX="100dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/btnLogin" />
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/hoggies"
+        android:layout_above="@+id/etName" />
+</RelativeLayout>
