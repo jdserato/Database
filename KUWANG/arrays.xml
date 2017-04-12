@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="house_array">
+        <item>Gryffindor</item>
+        <item>Hufflepuff</item>
+        <item>Ravenclaw</item>
+        <item>Slytherin</item>
+    </string-array>
+</resources>
