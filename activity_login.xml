@@ -10,7 +10,6 @@
     >
 
     <EditText
-        android:fontFamily="cursive"
         android:layout_width="306dp"
         android:layout_height="44dp"
         android:inputType="textPersonName"
@@ -26,7 +25,6 @@
 
 
     <EditText
-        android:fontFamily="cursive"
         android:layout_width="305dp"
         android:layout_height="44dp"
         android:inputType="textPassword"
