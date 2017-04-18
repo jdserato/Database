@@ -4,6 +4,7 @@ package com.example.danielle98.hogwartsdata;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -41,6 +42,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
         etPass = (EditText)findViewById(R.id.etPass);
         login.setOnClickListener(this);
         register.setOnClickListener(this);
+
+        Typeface typeface=Typeface.createFromAsset(getAssets(), "fonts/times.ttf");
+        etName.setTypeface(typeface);
+        etPass.setTypeface(typeface);
+
 
         if(session.loggedin()){
             startActivity(new Intent(Login.this,tabbar.class));
